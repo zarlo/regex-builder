@@ -17,7 +17,7 @@ public class Builder
             sb.Append(item.Build());
         }
         var output = sb.ToString();
-        if(test)
+        if (test)
         {
             // jut just checks if its a valid regex string
             Regex.Match("", output);
@@ -27,7 +27,8 @@ public class Builder
 
     public Builder Clone()
     {
-        return new Builder() {
+        return new Builder()
+        {
             Steps = this.Steps
         };
     }
